@@ -1,1 +1,22 @@
+Run Requirements
+Unity Editor: 2022.3 LTS or newer
+Operating System: Windows 10/11 (64-bit)
+Architecture: x86_64
+Native C++ DLL:
+Must be located in:
+Assets/Plugins/x86_64/
+Must be compiled for x64
 
+Build Requirements
+Unity (C#)
+Unity Hub + Unity Editor (2022.3 LTS or newer)
+
+C++ DLL (Pathfinding)
+IDE/Compiler: Visual Studio 2019 or newer
+C++ Standard: C++17 or newer
+Platform: x64
+Configuration: Release (recommended)
+Compiler Flags:
+OpenMP enabled (/openmp)
+Dependencies:
+OpenMP (included with MSVC)
