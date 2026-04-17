@@ -3,9 +3,13 @@ This is a multithreaded pathfinding navigation system, designed to optimize real
 <img width="840" height="717" alt="image" src="https://github.com/user-attachments/assets/4e62b6d5-9a4c-4c93-91bb-b3dd9d44018c" />
 
 1.This project required multiple components for the full implementation to work correctly. First there is a Unity program written in C#, named Model that controls interfacing with the Unity Game Engine for implementing the navigation agents into a Unity Scene. The Unity Game Engine handles agent visualization and movement within a 3d grid-based coordinate system, and performance monitoring with the Unity Profiler.
+
 2.In C++, an implementation of A* search algorithm was implemented. Initially this was Dijkstra’s algorithm, but the realization of needing a real grid-based representation for pathfinding lead to it being modified to A*. It uses a heuristic approach for pathfinding.
+
 3.This was then turned into a DLL (Dynamic Link Library) for interfacing with Unity, as Unity requires C#, so a C style API was created in a header file called PathfindingAPI.h and exposed with simple data types (int, float, void) for the DLL.
+
 4.The Model script and calls the DLL API sending a batch request of pathfinding jobs to run, and creates a data structure called a blocking collection, which holds individual NavAgent game objects that will be instantiated into a Unity scene. Batch size is dependent on the number of agents, with various thresholds. Batching was used instead of sending each job individually to reduce computationally expensive overhead of going from C# to C++.
+
 In the multithreaded implementation, OpenMP distributes pathfinding agent creation and computational tasks across multiple CPU threads, allowing different agents to compute paths concurrently.
 
 Run Requirements
