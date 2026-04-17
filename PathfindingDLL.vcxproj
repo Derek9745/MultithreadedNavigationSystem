@@ -137,18 +137,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\PathfindingMultiThreading\AStar.h" />
-    <ClInclude Include="..\PathfindingMultiThreading\Edge.h" />
-    <ClInclude Include="..\PathfindingMultiThreading\Graph.h" />
-    <ClInclude Include="..\PathfindingMultiThreading\PathfindingAPI.h" />
+    <ClInclude Include="AStarPath.h" />
+    <ClInclude Include="Edge.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Graph.h" />
     <ClInclude Include="Job.h" />
+    <ClInclude Include="PathfindingAPI.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\PathfindingMultiThreading\AStar.cpp" />
-    <ClCompile Include="..\PathfindingMultiThreading\PathfindingAPI.cpp" />
+    <ClCompile Include="AStarPath.cpp" />
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="PathfindingAPI.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
