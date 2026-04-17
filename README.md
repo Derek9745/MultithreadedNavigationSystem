@@ -1,4 +1,4 @@
-This is a multithreaded pathfinding navigation system, designed to otimize real time pathfinding systems for a large-scale number of navigation agents in the Unity Game Engine, using graph based-algorithms (A*) and parallelization for optimal performance. 
+This is a multithreaded pathfinding navigation system, designed to optimize real time pathfinding systems for a large-scale number of navigation agents in the Unity Game Engine, using graph based-algorithms (A*) and parallelization for optimal performance. 
 
 <img width="840" height="717" alt="image" src="https://github.com/user-attachments/assets/4e62b6d5-9a4c-4c93-91bb-b3dd9d44018c" />
 
