@@ -12,25 +12,25 @@ This is a multithreaded pathfinding navigation system, designed to optimize real
 
 In the multithreaded implementation, OpenMP distributes pathfinding agent creation and computational tasks across multiple CPU threads, allowing different agents to compute paths concurrently.
 
-Run Requirements
-Unity Editor: 2022.3 LTS or newer
-Operating System: Windows 10/11 (64-bit)
-Architecture: x86_64
-Native C++ DLL:
-Must be located in:
-Assets/Plugins/x86_64/
-Must be compiled for x64
+Run Requirements<br>
+Unity Editor: 2022.3 LTS or newer<br>
+Operating System: Windows 10/11 (64-bit)<br>
+Architecture: x86_64<br>
+Native C++ DLL:<br>
+Must be located in:<br>
+Assets/Plugins/x86_64/<br>
+Must be compiled for x64<br>
 
-Build Requirements
-Unity (C#)
-Unity Hub + Unity Editor (2022.3 LTS or newer)
+Build Requirements<br>
+Unity (C#)<br>
+Unity Hub + Unity Editor (2022.3 LTS or newer)<br>
 
-C++ DLL (Pathfinding)
-IDE/Compiler: Visual Studio 2019 or newer
-C++ Standard: C++17 or newer
-Platform: x64
-Configuration: Release (recommended)
-Compiler Flags:
-OpenMP enabled (/openmp)
-Dependencies:
-OpenMP (included with MSVC)
+C++ DLL (Pathfinding)<br>
+IDE/Compiler: Visual Studio 2019 or newer<br>
+C++ Standard: C++17 or newer<br>
+Platform: x64<br>
+Configuration: Release (recommended)<br>
+Compiler Flags:<br>
+OpenMP enabled (/openmp)<br>
+Dependencies:<br>
+OpenMP (included with MSVC)<br>
